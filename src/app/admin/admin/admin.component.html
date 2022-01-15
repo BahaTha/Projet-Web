@@ -1,0 +1,14 @@
+<nav style="text-align: center;">
+    <a routerLink="./list" routerLinkActive="active">
+    <img src="assets/show.png" class="icon" height="50" width="50"/>
+    </a> &nbsp;&nbsp;
+    <a routerLink="./add" routerLinkActive="active">
+    <img src="assets/add.png" class="icon" height="50" width="50"/>
+    </a>
+    <a [routerLink]="['./edit', 1]" routerLinkActive="active">
+    <img src="assets/edit.png" class="icon" height="50" width="80"/>
+    </a>
+    </nav>
+    <section>
+    <router-outlet></router-outlet>
+    </section>
